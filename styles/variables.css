@@ -1,4 +1,21 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: 255, 0, 112;
+    --font-color: #F1B2CE;
+    --background: #000028;
+    --header-color: #DB00FF;
+    --title-decor: #FF0070;
+    --background-image: url(../images/cover-image-dark.png);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: 53, 52, 48;
+    --font-color: #353430;
+    --background: #FF8DCB;
+    --header-color: #FFC2E6;
+    --title-decor: #FF8DCB;
+    --background-image: url(../images/cover-image-light.png);
+  }
+}
