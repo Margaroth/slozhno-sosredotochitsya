@@ -1,49 +1,27 @@
+@charset "UTF-8";
+
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_light {
-  --accent-color: 53, 52, 48;
-  --font-color: #353430;
-  --background: #FF8DCB;
-  --header-color: #FFC2E6;
-  --title-decor: #FF8DCB;
+  --main-text-color: #353430;
+  --title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --title-decor: #ff8dcb;
+  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+  --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
+  --article-title-color: var(--main-text-color);
+  --section-title-color: var(--main-text-color);
+  --border-color: var(--title-shadow);
+  --corners-color: var(--main-text-color);
+  --link-shadow: var(--title-color);
+  --rec-color: var(--background-color);
 }
 
-.theme_light .rec {
+.page.theme_light .header__rec {
   display: none;
-}
-
-.theme_light .camera-dot::after {
-  display: none;
-}
-
-@media (width >= 1024px) {
-  .theme_light .camera-man {
-    position: absolute;
-    left: calc(100vw - 81px + 37px);
-  }
-}
-
-@media (width >= 1024px) {
-  .theme_auto .camera-man {
-    position: absolute;
-    left: calc(100vw - 81px + 37px);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .theme_light {
-    --accent-color: 53, 52, 48;
-    --font-color: #353430;
-    --background: #FF8DCB;
-    --header-color: #FFC2E6;
-    --title-decor: #FF8DCB;
-    --background-image: url(../images/cover-image-light.png);
-  }
-
-  .theme_auto .camera-dot::after {
-    display: none;
-  }
-
-  .theme_auto .rec {
-    display: none;
-  }
 }
