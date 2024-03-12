@@ -11,6 +11,7 @@
   background-attachment: fixed;
   color: var(--main-text-color);
   transition-duration: var(--transition-duration);
+  background-attachment: fixed;
 }
 
 /* Header */
@@ -390,10 +391,6 @@
   .section:last-of-type .section__image {
     width: 100%;
     height: auto;
-  }
-
-  .section:last-of-type .section__image-container {
-    width: 100px;
   }
 }
 
